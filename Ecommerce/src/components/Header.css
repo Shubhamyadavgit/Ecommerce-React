@@ -1,0 +1,84 @@
+/* Styling for the navbar container */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the right */
+    align-items:center;
+    padding: 2px 30px; /* More padding for a sleeker look */
+    background-color: #fff; /* Dark grey-blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-sizing: 0;
+    border-radius: 5px;
+  }
+  .logo{
+    padding: 0px;
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+  
+  /* Styling for the navigation links */
+  .NavItems {
+    margin-left: 50px; /* Increases space between links */
+    color: black; /* Light grey text color */
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger font for better readability */
+    font-weight: 500; /* Adds slight boldness */
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  /* Hover effect for the navigation links */
+  .NavItems:hover {
+    color: #1abc9c; /* Change text color to a teal green on hover */
+    transform: translateY(-2px); /* Subtle lift on hover */
+  }
+  
+  /* Underline effect on hover */
+  .NavItems::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #1abc9c; /* Same as hover color */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .NavItems:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Media query for responsiveness (adjust for smaller screens) */
+  @media (max-width: 768px) {
+    .nav {
+      justify-content: center; /* Center the nav items on smaller screens */
+      padding: 10px;
+    }
+  
+    .NavItems {
+      margin-left: 15px;
+      font-size: 16px; /* Slightly smaller font on mobile */
+    }
+  }
+  .num{
+    position: absolute;
+  top: -10px; /* Moves the number above the cart icon */
+  right: -10px; /* Moves the number slightly to the right */
+  background-color: red; /* Red background for the badge */
+  color: white; /* White text inside the badge */
+  font-size: 12px; /* Smaller font size for the number */
+  padding: 4px 6px; /* Padding for the circular shape */
+  border-radius: 50%; /* Makes the badge a circle */
+  text-align: center;
+  font-weight: bold;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

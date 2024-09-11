@@ -1,0 +1,79 @@
+/* General container styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* Styling for individual service sections */
+  .services, .services2, .services3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .services:hover, .services2:hover, .services3:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  /* Icon styling */
+  .delivery-icon, .box1 svg, .box2 svg, .services3 svg {
+    font-size: 50px; /* Large icon size */
+    color: #1abc9c; /* Teal color for the icons */
+    margin-bottom: 15px;
+  }
+  
+  /* Heading (h3) styling */
+  .services h3, .box1 h3, .box2 h3, .services3 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-top: 10px;
+  }
+  
+  /* Styling for the secondary boxes inside .services2 */
+  .services2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .services2 .box1, .services2 .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .services2 .box1:hover, .services2 .box2:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* 1 column for smaller screens */
+      gap: 20px;
+    }
+  
+    .services2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  

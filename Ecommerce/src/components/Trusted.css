@@ -1,0 +1,55 @@
+/* Container styling */
+.container-2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    width: 300%; /* Full width for better responsiveness */
+    max-width: 1200px; /* Set a max-width for control */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center text inside the container */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Inner brands styling */
+.inner-brands {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out the icons evenly */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure the brands container takes full width */
+    padding: 20px; /* Add padding inside the container */
+    flex-wrap: wrap; /* Allow wrapping of icons on smaller screens */
+}
+
+/* Brand styling */
+.brand1 {
+    display: flex; /* Ensure brand icons are centered */
+    align-items: center; /* Center icons vertically */
+    justify-content: center; /* Center icons horizontally */
+    margin: 10px; /* Add margin for spacing between icons */
+    flex: 1; /* Allow icons to grow and shrink as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container-2 {
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+    .inner-brands {
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container-2 {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .inner-brands {
+        flex-direction: column; /* Stack icons vertically on small screens */
+        align-items: center; /* Center icons horizontally */
+    }
+    .brand1 {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+}
