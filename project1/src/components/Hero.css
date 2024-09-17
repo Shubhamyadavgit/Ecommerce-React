@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    padding-left: 158px;
+    padding-top: 40px;
+}
+.left-container{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.left-container h1{
+    height: 50%;
+    width: 100%;
+    font-size: 90px;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.left-container p{
+    margin-top: 20px;
+    width: 60%;
+    margin-bottom: 20px;
+    font-size: small;
+    font-weight: bold;
+    color: grey;
+}
+.buttons{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+.but1{
+    background-color: #D01C28;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 40px;
+    color: white;
+    font-size: 18px;
+}
+.but2{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: white;
+    color: grey;
+}
+.but1:hover{
+    background-color: red;
+    transition: 500ms;
+}
+.but2:hover{
+    background-color: darkgrey;
+    transition: 500ms;
+}

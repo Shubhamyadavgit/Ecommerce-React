@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+img{
+    margin-right: 50px;
+}
+.navbar{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar nav a{
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login{
+    color: white;
+    background-color: #D01C28;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login:hover{
+    background-color: red;
+    transition: 500ms;
+}
+.navbar nav a:hover{
+    color: #D01C28;
+    transition: 300ms;
+}
