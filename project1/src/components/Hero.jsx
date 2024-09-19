@@ -14,7 +14,7 @@ const Hero = () => {
           SHOES.
         </p>
         <div className="buttons">
-          <button className="but1">Shop Now</button>
+          <button className="but1">Shop Now </button>
           <button className="but2">Category</button>
         </div>
         <div className="shop">

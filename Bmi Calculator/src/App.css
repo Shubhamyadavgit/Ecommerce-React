@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'poppins',sans-serif;
+  background-color: #3e4041;
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container{
+  background-color: #1e1e1e;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+form div{
+  margin-bottom: 20px;
+  text-align: left;
+}
+label{
+  font-size: 16px;
+  font-weight: 500;
+  color: #eee;
+}
+input[type="text"]{
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 8px;
+  transition: border-color 0.3s;
+}
+input[type="text"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 48%;
+  transition: background-color 0.3s;
+}
+button:hover{
+  background-color: #5753d9;
+}
+button[type="reset"] {
+  background-color: #ff5a5f;
+}
+button[type="reset"]:hover {
+  background-color: #e14d4f;
+}
+.message {
+  margin-top: 24px;
+}
+
+h4 {
+  font-size: 22px;
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #6c63ff;
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input[type="text"], button {
+    font-size: 14px;
+  }
+}
